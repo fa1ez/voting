@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="8.0" prefHeight="486.0" prefWidth="179.0" style="-fx-background-color: #00252e;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="166.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@istockphoto-524055319-170667a.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text layoutX="212.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="American Vote System" wrappingWidth="388.13671875">
+         <font>
+            <Font name="Georgia" size="38.0" />
+         </font>
+      </Text>
+      <Text layoutX="224.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please choose one of the following." wrappingWidth="336.13671875">
+         <font>
+            <Font name="Georgia Italic" size="16.0" />
+         </font>
+      </Text>
+      <RadioButton layoutX="246.0" layoutY="190.0" mnemonicParsing="false" text="CITIZEN">
+         <toggleGroup>
+            <ToggleGroup fx:id="choice1" />
+         </toggleGroup>
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="246.0" layoutY="234.0" mnemonicParsing="false" text="ADMIN" toggleGroup="$choice1">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="520.0" layoutY="420.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="65.0" text="NEXT" />
+   </children>
+</AnchorPane>
